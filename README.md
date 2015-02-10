@@ -1,10 +1,10 @@
-NPM installed dependincies list generator
+NPM installed dependencies list generator
 =========================
 
 After usual `npm update` you may experience your app doesn't work at all due to several packages have no backward compability.
 `npm shrinkwrap` [https://docs.npmjs.com/cli/shrinkwrap] or `lockdown` [https://www.npmjs.com/package/lockdown] could help.
 But sometimes they throw error too. 
-Although you have working version on production server and that's the case you may use this little tool.
+Though you have working version on production server and that's the case you may use this little tool.
 
 Usage
 -----
