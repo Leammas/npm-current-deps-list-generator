@@ -1,5 +1,6 @@
-NPM installed dependencies list generator
+NPM & Bower installed dependencies list generator
 =========================
+Makes json list of currently installed dependencies versions which later may be used to fix versions.
 
 After usual `npm update` you may experience your app doesn't work at all due to several packages have no backward compability.
 `npm shrinkwrap` [https://docs.npmjs.com/cli/shrinkwrap] or `lockdown` [https://www.npmjs.com/package/lockdown] could help.
@@ -9,9 +10,19 @@ Though you have working version on production server and that's the case you may
 Usage
 -----
 
-Make currently installed modules list via
+**NPM**: Make currently installed modules list via
 ```
 npm list --json --depth 1 > list.json
+```
+
+**Bower**:
+If you have bower installed as local package
+```
+./node_modules/.bin/bower list --json > list.json
+```
+And the next one for global installation
+```
+bower list --json > list.json
 ```
 
 Download generator.js to your project directory and run
